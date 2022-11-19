@@ -1,0 +1,108 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    min-height: 100vh;
+    display: flex;
+    background-color: #17A2B8;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 442px;
+    margin: auto;
+    padding: 30px 26px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#text-input{
+    min-height: 270px;
+    width: 100%;
+    padding: 15px;
+    resize: none;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#text-input::placeholder{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Poppins';
+    color: #ccc;
+}
+
+
+.file-option{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+label{
+    color: #333;
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type='text'], #select-menu{
+    padding: 15px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+input[type='text']::placeholder{
+    font-size: 14px;
+    color: #ccc;
+    font-family: 'Poppins';
+
+}
+
+#select-menu{
+    width: 100%;
+    font-weight: 400;
+    color: #333;
+}
+
+option{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+
+.save-btn{
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #17A2B8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#text-input:valid ~ .save-btn{
+    opacity: 1;
+}
